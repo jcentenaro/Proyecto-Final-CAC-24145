@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8df6b0f30c.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navegacion">
+            <a class="" href="../index.html"></a>
+            <i class="fas fa-film"></i>
+            <span>CAC-Movies</span>
+
+            <ul class="listNav">
+                <li class="listItem"><a class="listNav" href="#tendencias">Tendencias</a></li>
+                <li class="listItem"><a class="listNav" href="./pages/registrarse.html">Registrarse</a></li>
+                <li class="listItem"><a class="listNav" href="#">Iniciar Sesión</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="main" id="main">
+        <section class="sectionPrincipal" data-aos="zoom-in" data-aos-duration="1000">
+            <h1 class="tituloPrincipal">Películas y series ilimitadas</h1>
+            <h2 class="subtituloPrincipal">Disfruta donde quieras.<br>Cancelá cuando quieras.</h2>
+            <a class="botonRegistrarse" href="">Registrarse</a>
+        </section>
+
+        <section class="buscadorPrincipal" data-aos="zoom-in" data-aos-duration="1000">
+            <h2 class="tituloSection">¿Qué estás buscando?</h2>
+            <form class="buscadorPeliculas">
+                <input class="inputBuscador" type="text" placeholder="Buscar...">
+                <input class="botonBuscacdor" type="submit" value="Buscar" class="botonBuscar">
+            </form>
+            
+        </section>
+
+        <hr>
+        
+        <section class="buscadorPrincipal" data-aos="zoom-in" data-aos-duration="1000">
+            <h3 class="tituloSection">Las Tendencias</h3>
+            <div class="peliculas">
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                        <img class="imgTendencia" src="./assets/img/peli_1.jpg" alt="The Beekeeper">
+                        <div class="tituloPelicula">
+                            <h4>The Beekeeper</h4>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+    <!--Animación en https://michalsnik.github.io/aos/ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
