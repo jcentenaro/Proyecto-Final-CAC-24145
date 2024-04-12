@@ -136,7 +136,7 @@ body{
 .main{
     .sectionPrincipal{
         color:white;
-        background:linear-gradient(to right top, #0000008a, #0000008a), url(/assets/img/banner-bg.jpg);
+        background:linear-gradient(to right top, #0000008a, #0000008a), url(../assets/img/banner-bg.jpg);
         background-size: cover;
         background-position: center;
         height: 90vh;
@@ -174,7 +174,7 @@ body{
     }
     .buscadorPrincipal{
         background-color: #181419;
-        color:rgb(255, 255, 255);
+        color:white;
         height: 50vh;
         display: flex;
         flex-direction: column;
@@ -194,7 +194,7 @@ body{
             .inputBuscador{
                 border: 2px solid white;
                 border-radius: 25px;
-                color: #000000;
+                color: #ffffff;
                 font-size: 1.2rem;
                 height: 50px;
                 margin: 20px 0px;
@@ -256,7 +256,6 @@ body{
                         height: 100%;
                         object-fit: cover;
                         border-radius: 10px;
-                       
                     }
                   
                     .tituloPelicula{
@@ -269,7 +268,7 @@ body{
                         width: 100%;
                         transform: translateY(-50%) translateX(-50%);
                         h4 {
-                            font-size: 1.6rem;
+                            font-size: 1.5rem;
                             font-weight: bold;
                             opacity: 0;
                             margin-bottom: 0.5rem;
@@ -280,23 +279,24 @@ body{
                     }
                     &:hover{
                        box-shadow: 0 0 30px #9f3648cd;
-                       transform: scale(0.9);
+                       transform: scale(1.1);
                       
                     }
-                    &:hover .tituloPelicula{
+                    &:hover h4 {
+                        opacity: 1;
+                      
+                    }
+                    &:hover::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
                         width: 100%;
                         height: 100%;
-                        backdrop-filter: blur(20px);
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        border-radius: 10px;
+                        background-color: #9f3648; /* Color rojo transparente */
+                        z-index: 1; /* Para asegurarse de que esté sobre la imagen */
                     }
-                    &:hover h4 {
-                        width: 100%;
-                        padding: 0.5rem;
-                        opacity: 1;
-                    }
-                 
                 }
             }
           
@@ -426,7 +426,11 @@ body{
                        
                     }
                 }
-              
+                &:hover{
+                    box-shadow:initial;
+                    transform: scale(0.9);
+                   
+                }
                
             }
             .boton{
@@ -519,7 +523,7 @@ body{
 /*ESTILOS ESCRITORIO PARA PAGINA Registrarse */
 .bodyRegistrarse{
     height: 100vh;
-    background:linear-gradient(to right top, #24242473,#24242473),url("/assets/img/bg-register.jpg");
+    background:linear-gradient(to right top, #24242473,#24242473),url("../assets/img/bg-register.jpg");
     background-size: cover;
     background-position: center;
     .headerRegistrarse{
@@ -562,7 +566,7 @@ body{
                 padding:40px;
                 input:not(.check,.boton),select{
                     width: 100%;
-                    margin-bottom: 10px;
+                    margin-bottom: 20px;
                     height: 40px;
                     padding: 0px 20px;
                     font-size: 1.2rem;
@@ -570,18 +574,8 @@ body{
                     border: 2px solid #9f3647;
                     background-color: #333333;
                     outline: none;
-                    color:rgb(255, 255, 255);
+                    color:white;
                 }
-                .error input:not(.check,.boton),.error select{
-                    border: 1px solid #ff0000;
-                }
-                .error-text{
-                    color: #ff0000;
-                    font-size: 0.8rem;
-                    margin-top:0px;
-                    margin-bottom: 10px;
-                }
-              
                 .terminos{
                     font-size: 0.8rem;
                     display: flex;
@@ -617,8 +611,6 @@ body{
    
     }
 }
-
-
 
 /*media querys para mobile PAGINA registrarse*/
 @media (max-width: 1200px) {
@@ -674,7 +666,7 @@ body{
     
     .detalle{
         padding-top:50px;
-        background:linear-gradient(to right top, #6d6969a7, #6d6969a7),url("/assets/img/mario-bg.jpg");
+        background:linear-gradient(to right top, #6d6969a7, #6d6969a7),url("../assets/img/mario-bg.jpg");
         background-size: cover;
         background-position: center;
         height: 70vh;
